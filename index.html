@@ -1,0 +1,118 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="./css/styles.css" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body onload="myFunction()">
+    <div class="score-board">
+        <div class="header-left">
+            <ul>
+                <li>ROCK</li>
+                <li>PAPER</li>
+                <li>SCISSORS</li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <div class="scores">
+                <p>COMPUTER<br>SCORE</p>
+                <h1 id="cscore"></h1>
+            </div>
+            <div class="scores">
+                <p>YOUR<br>SCORE</p>
+                <h1 id="pscore"></h1>
+            </div>
+        </div>
+    </div>
+    <section class="main">
+        <div class ="root">
+            <div class="game-board">
+                <div class="upper-board">
+                    <div class="circle rock" id="rock" data-val="rock">
+                        <img src="assets/rock.png" alt="rock">
+                    </div>
+                    <div class="upper-line">
+                        <img src="assets/connect-lines.png" alt="black-line">
+                    </div>
+                    <div class="circle scissors" id="scissors" data-val="scissors">
+                        <img src="assets/scissors.png" alt="scissors">
+                    </div>
+                </div>
+                <div class="middle-board">
+                    <div class="line line2"></div>
+                    <div class="line line1"></div>
+                </div>
+                <div class="lower-board">
+                    <div class="circle paper" id="paper" data-val="paper">
+                        <img src="assets/paper.png">
+                    </div>
+                </div>
+            </div>
+            <div class="result-board" style="display:none;">
+                <div class="result-box">
+                    <div class="display-choice" id="player-pick">
+                        <p>YOU PICKED</p>
+                        <div class="circle" id="player">
+                            <img src="assets/rock.png" alt="player pick image" id="playerPickImg">
+                        </div>
+                        <div id="playerWin" class="won">
+                            <div class="shading outer" style="--i: 1"></div>
+                            <div class="shading inner" style="--i: 2"></div>
+                            <div class="shading innermost" style="--i: 3"></div>
+                          </div>
+                    </div>
+                    <div class="result-screen">
+                        <p>
+                            <span id="winner">YOU WIN</span>
+                            <br />
+                            AGAINST PC
+                        </p>
+                        <button class="play-again" id="playAgain">PLAY AGAIN</button>
+                    </div>
+                    <div class="display-choice" id="computer-pick">
+                        <p>PC PICKED</p>
+                        <div class="circle" id="computer">
+                            <img src="assets/rock.png" alt="computer pick image" id="computerPickImg">
+                        </div>
+                        <div id="computerWin" class="won">
+                            <div class="shading outer" style="--i: 1"></div>
+                            <div class="shading inner" style="--i: 2"></div>
+                            <div class="shading innermost" style="--i: 3"></div>
+                          </div>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+    <div class="rule-envelop">
+        <div class="rule-box">
+            <div class="rule-title">
+                <p>Game Rules</p>
+            </div>
+            <div class="rule-close">
+                <img src="assets/close.png" alt="Rule close button" style="width: 25px; height: 36px;">
+            </div>
+            <div class="set-rules">
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <br>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <br>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <br>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <button class="rule_btn" id="ruleButton">RULES</button>
+        <a  href='html/celebration.html'class="rule_btn" id="next_btn" style="display: none;">NEXT</button>
+    </div>
+</body>
+<script type="text/javaScript" src="js/src.js"></script>
+</html>
