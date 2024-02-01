@@ -11,6 +11,7 @@ const playerPickImg = document.getElementById("playerPickImg");
 const computerPickImg = document.getElementById("computerPickImg");
 const nextButton = document.getElementById("next_btn");
 const playerWinStatus = document.getElementById("winner");
+const againstStatement = document.getElementById("game_against")
 const celebratePlayerWin = document.getElementById("playerWin");
 const celebrateComputerWin = document.getElementById("computerWin");
 const playAgain = document.getElementById("playAgain");
@@ -38,6 +39,7 @@ const freshGame = () => {
     celebratePlayerWin.style.display = "none";
     playerPick = "";
     computerPick = "";
+    ruleEnvelop.style.display="flex";
 };
 window.onload = function () {
     freshGame();
@@ -84,11 +86,16 @@ const handleChoices = (selectedChoice) =>{
         nextButton.style.display = "flex";
         celebratePlayerWin.style.display = "flex";
         playerWinStatus.textContent = "YOU WIN";
+        againstStatement.style.display = "flex";
+        ruleEnvelop.style.display="none";
       }
       else if(playerPick == computerPick)
       {
         playerWinStatus.textContent = "TIE UP";
         playAgain.textContent = "REPLAY";
+        againstStatement.style.display = "none";
+        ruleEnvelop.style.display="none";
+
       }
       else{
         computerScore++;
@@ -97,6 +104,8 @@ const handleChoices = (selectedChoice) =>{
         nextButton.style.display = "none";
         playerWinStatus.textContent = "YOU LOST";
         celebrateComputerWin.style.display = "flex";
+        againstStatement.style.display = "flex";
+        ruleEnvelop.style.display="none";
 
       }
     

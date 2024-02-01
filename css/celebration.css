@@ -1,0 +1,143 @@
+body{
+    margin: 0;
+    background-color: #8CC461;
+    font-family: 'Roboto';
+}
+a{
+    text-decoration: none;
+}
+.celebration-text #excite{
+    color: #fff;
+    text-align: center;
+    font-size: 5.688rem;
+    font-weight: 600;
+    letter-spacing: 9px;;
+    margin-bottom: -10%;
+    margin-top: 7%;
+}
+
+.celebration-text #statement{
+    color: #fff;
+    text-align: center;
+    font-size: 2.563rem;
+    font-weight: 600;
+    letter-spacing: 2px;
+}
+
+.celebration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.celebration-img{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 3.5rem;
+}
+
+#star{
+
+    width: 504px;
+    height: 290px;
+}
+
+#trophy{
+    position: absolute;
+    top: 50%;
+    width: 201px;
+    height: 200px;
+}
+
+.play-again{
+    padding-inline: 2rem;
+    padding-block: 0.6rem;
+    background-color: white;
+    color: gray;
+    border-radius: 10px;
+    border: none;
+    font-weight: 600;
+    font-size: 0.938rem;
+    letter-spacing: 2px;
+}
+
+.bottom{
+    display: flex;
+    position: absolute;
+    align-items: center;
+    justify-content: end;
+    gap: 2rem;
+    padding-right: 2rem;
+    bottom: 0px;
+    right: 0;
+    padding-bottom: 20px;
+}
+.rule_btn{
+    padding-inline: 2rem;
+    padding-block: 0.6rem;
+    background-color: transparent;
+    color: white;
+    border: 2px solid #FFFFFF;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 500;
+}
+
+.rule-envelop{
+    position: absolute;
+    display: flex;
+    right: 0;
+    bottom: -40px;
+    align-items: center;
+    justify-content: end;
+    padding: 2rem;
+    padding-bottom: 0;
+}
+
+.rule-box{
+    display: block;
+    position: relative;
+    background-color: #004429;
+    color: white;
+    border: 7px solid white;
+    border-radius: 13px;
+    width: 278px;
+}
+.rule-title{
+    text-align: center;
+    font-size: 1.813rem;
+    font-weight: 500;
+}
+
+.rule-close{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #FF0000;
+    right: -1.8rem;
+    top: -2.25rem;
+    width: 50px;
+    height: 50px;
+    border: 7px solid #FFFFFF;
+    border-radius:100%
+}
+.set-rules{
+    padding-right: 1rem;
+    padding-bottom: 2rem;
+    font-size: 0.813rem;
+    line-height: 15.23px;
+}
+ul{
+    list-style-type: square;
+}
+
+li::marker{
+    color: #FFD600;
+    font-size: 1rem;
+}

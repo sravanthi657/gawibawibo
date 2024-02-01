@@ -2,9 +2,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game Winning Celebrations</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="../css/celebration.css" rel="stylesheet">
+    
 </head>
 <body>
-    
+    <section>
+        <div class="main">
+            <div class="celebration">
+              <div class="celebration-img">
+                <img src="../assets/stars.png" alt="golden stars" id="star"/>
+                <img src="../assets/trophyCup.png" alt="Trophy" id="trophy" />
+              </div>
+              <div class="celebration-text">
+                <p id="excite">HURRAY!!</p>
+                <p id="statement">YOU WON THE GAME</p>
+              </div>
+              <a href="../index.html" class="play-again" id="playAgain">PLAY AGAIN</a>
+            </div>
+          </div>
+    </section>
+    <div class="rule-envelop" style="display: none;">
+        <div class="rule-box">
+            <div class="rule-title">
+                <p>Game Rules</p>
+            </div>
+            <div class="rule-close">
+                <img src="../assets/close.png" alt="Rule close button" style="width: 25px; height: 36px;">
+            </div>
+            <div class="set-rules">
+                <ul>
+                    <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+                    <br>
+                    <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+                    <br>
+                    <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+                    <br>
+                    <li>If both players lay down the same hand, each player lays down another hand</li>
+                </ul>
+                
+            </div>
+        </div>
+    </div>
+    <div class="bottom">
+        <button class="rule_btn" id="ruleButton">RULES</button>
+        <a  href='html/celebration.html'class="rule_btn" id="next_btn" style="display: none;">NEXT</button>
+    </div>
 </body>
+<script type="text/javaScript" src="../js/celebration.js"></script>
+
 </html>

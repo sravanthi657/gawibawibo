@@ -159,7 +159,7 @@ body{
 }
 
 .result-board{
-    top: 0;
+    top: -5%;
     position: absolute;
     left: 20%;
 }
@@ -168,7 +168,7 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 1rem;
+    gap: 5rem;
     padding: 6rem;
     padding-top: 4rem;
 }
@@ -296,6 +296,7 @@ li::marker{
     width: 350px;
     background-color: transparent;
     z-index: -999;
+    top: 13%;
 }
 
 .display-choice{
@@ -307,6 +308,7 @@ li::marker{
     color: white;
     font-weight: 600;
     font-size: 1.063rem;
+    margin-top: 5%;
 }
 
 .result-screen{
@@ -318,12 +320,37 @@ li::marker{
     font-size: 1.5rem;
     font-weight: 800;
     padding: 1rem;
+    padding-top: 10rem;
+}
+#next_btn{
+    display: none;
+}
+a{
+    text-decoration: none;
+}
+.display-choice .paper{
+     margin-bottom: 100%;
+}
+.display-choice #playerWin{
+    margin-top: -10%;
 }
 
+.display-choice #computerWin{
+    margin-top: -10%;
+}
 
-/* .display-choice .paper{
-     top:-70%
-} */
+#winner{
+    font-weight: 900;
+    font-size: 2.438rem;
+    letter-spacing: 2px;
+}
+#game_against{
+    margin-top: -10%;
+    font-size: 1.563rem;
+    font-weight: 900;
+    letter-spacing: 2px;
+    margin-bottom: -20%;
+}
 /* .player-pick .circle .paper{
     
 } */
